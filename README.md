@@ -27,6 +27,7 @@ Vagrant setup:
 Create a project folder, cd to it. One folder for each environment is preferrable and tidy. Multimachine setup in one Vagrantfile is possible.
 
 sudo apt-get install vagrant
+
 Select image from vagrantcloud.com, e.g. Debian/Jessie64
 
 vagrant box add Debian/Jessie64 (downloads the image)
