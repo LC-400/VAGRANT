@@ -1,6 +1,6 @@
 Vagrant V1.9.1 with Oracle Virtualbox V5.1. Debian 8, Jessie-64bit. Basic setup.
 
-Virtualbox setup
+Virtualbox setup:
 wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo
 apt-key add -
 
@@ -9,14 +9,16 @@ sudo apt-get install virtualbox 5.1
 edit /etc/apt/sources.list: deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian <your distro> Contrib
 (V10=Buster, V9=Stretch, V8=Jessie)
 
-Virtualbox configuration - adding a desktop environment
+Virtualbox configuration:
+Adding a desktop environment
 In Debian: run tasksel, select desktop, e.g. Xfce.
 
 In vagrantfile: Remove comments for "Enable vb.gui", "true" and "end"
 
 Vagrant reload
 
-Virtualbox configuration - setting the memory for the VM
+Virtualbox configuration:
+Setting the memory for the VM
 In vagrantfile: Uncomment VM.memory, adjust MB to need
 
 Vagrant reload
@@ -41,8 +43,7 @@ vagrant plugin install vagrant.vbguest (installs shared folders etc.).
 vagrant reload
 
 
-Vagrant operation
-
+Vagrant operation:
 Running the image: vagrant up (if only one image present)
 
 Logging in to the image: vagrant ssh (if only one image present)
