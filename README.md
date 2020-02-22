@@ -13,10 +13,12 @@ Virtualbox configuration - adding a desktop environment
 In Debian: run tasksel, select desktop, e.g. Xfce.
 
 In vagrantfile: Remove comments for "Enable vb.gui", "true" and "end"
+
 Vagrant reload
 
 Virtualbox configuration - setting the memory for the VM
 In vagrantfile: Uncomment VM.memory, adjust MB to need
+
 Vagrant reload
 
 Vagrant setup
@@ -40,9 +42,13 @@ vagrant reload
 
 
 Vagrant operation
+
 Running the image: vagrant up (if only one image present)
+
 Logging in to the image: vagrant ssh (if only one image present)
+
 Shutting down the VM: vagrant halt (after logging out of the image)
+
 Fix a botched installation: sudo rm -rf ~/.vagrant.d (user data),/opt/
 vagrant,/user/bin/vagrant (the binaries). Appears as a clean install for
 vagrant.
